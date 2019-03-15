@@ -14,7 +14,7 @@ np.random.seed(5)
 
 # 1. 데이터 준비하기
 #=====================================================
-batch=speech_data.wave_batch_generator(1205,target=speech_data.Target.digits)
+batch=speech_data.wave_batch_generator(1,target=speech_data.Target.digits)
 X,Y=next(batch)
 x_train = np.array(X)
 x_train = np.reshape(x_train, (x_train.shape[0],x_train.shape[1], 1))
